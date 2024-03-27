@@ -1,4 +1,4 @@
-# technicalTestWithExpressAndNext
+
 
 # Next.js and Express.js Application
 
