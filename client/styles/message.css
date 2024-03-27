@@ -1,0 +1,16 @@
+/* message.css */
+
+.login-message {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    margin-bottom: 20px; /* Bottom margin */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Initially hidden */
+    
+  }
+  
+  .login-message.show {
+    display: block; /* Show the message */
+  }
+  
