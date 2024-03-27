@@ -14,7 +14,7 @@ async function connectToDatabase(uri) {
     console.log('Database connected successfully');
   } catch (error) {
     console.error('Database connection error:', error);
-    process.exit(1); // Exit the application on connection failure
+    //process.exit(1); // Exit the application on connection failure
   }
 }
 
