@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "fda89056-da6e-4126-a0c5-d30bf7202070",
 		"name": "technicalTestWithExpressAndNext",
+		"description": "## Authentication\n\nThis API uses JWT-based authentication. To authenticate requests, include a valid JWT token in the Authorization header with the Bearer scheme.\n\nEndFragment\n\nStartFragment\n\n## Base URL\n\n[http://localhost:3000/](http://localhost:3000/api)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "19894563"
 	},
@@ -29,7 +30,8 @@
 						"user",
 						"register"
 					]
-				}
+				},
+				"description": "Registers a new user.\n\n#### Request Headers\n\n| Header | Value |\n| --- | --- |\n| Content-Type | application/json |\n\nEndFragment\n\nStartFragment\n\n#### Request Body\n\n```\njsonCopy code{\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\"\n}\n\n ```\n\n#### Response\n\n##### Success Response\n\n```\njsonCopy code{\n  \"message\": \"User registered successfully\",\n  \"user\": {\n    \"id\": \"1\",\n    \"email\": \"user@example.com\"\n  }\n}\n\n ```\n\n##### Error Response\n\n```\njsonCopy code{\n  \"message\": \"Email already exists\"\n}\n\n ```"
 			},
 			"response": []
 		},
@@ -69,7 +71,8 @@
 						"user",
 						"login"
 					]
-				}
+				},
+				"description": "Logs in an existing user.\n\n#### Request Headers\n\n| Header | Value |\n| --- | --- |\n| Content-Type | application/json |\n\n#### Request Body\n\n```\njsonCopy code{\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\"\n}\n\n ```\n\n#### Response\n\n##### Success Response\n\n```\njsonCopy code{\n  \"message\": \"Login successful\",\n  \"token\": \"<JWT Token>\"\n}\n\n ```\n\n##### Error Response\n\n```\njsonCopy code{\n  \"message\": \"Invalid credentials\"\n}\n\n ```"
 			},
 			"response": []
 		},
@@ -107,7 +110,8 @@
 							"value": "POST"
 						}
 					]
-				}
+				},
+				"description": "get Analytic data"
 			},
 			"response": []
 		},
@@ -144,7 +148,8 @@
 						"user",
 						"profile"
 					]
-				}
+				},
+				"description": "Updates the user's profile information\n\n#### Request Headers\n\n| Header | Value |\n| --- | --- |\n| Content-Type | application/json |\n| Authorization | Bearer |\n\n#### Request Body\n\n```\njsonCopy code{\n  \"name\": \"New Name\",\n  \"email\": \"newemail@example.com\"\n}\n\n ```\n\n#### Response\n\n##### Success Response\n\n```\njsonCopy code{\n  \"message\": \"Profile updated successfully\"\n}\n\n ```\n\n##### Error Response\n\n```\njsonCopy code{\n  \"message\": \"Unauthorized\"\n}\n\n ```"
 			},
 			"response": []
 		},
@@ -183,7 +188,8 @@
 						"profile",
 						"avatar"
 					]
-				}
+				},
+				"description": "Upload image of existing user"
 			},
 			"response": []
 		}
