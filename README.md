@@ -37,8 +37,7 @@ Follow the instructions below to set up and run both the frontend and backend pa
 
 #### Prerequisites
 
-- Node.js   v18.17.0 or later installed on your machine.
-- npm i 
+- Node.js   v18.17.0 or later installed on your machine. 
 
 #### Installation
 
